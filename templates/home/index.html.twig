@@ -3,13 +3,14 @@
 {% block title %}Home index{% endblock %}
 
 {% block body %}
+<body class="home">
 <div class="container"> 
 
-    <h3> 03 • 12 • 2023 </h3>
-    <h3> March 12th, 2023 </h3>
+    <h1 class="ml16"> 03 • 12 • 2023 </h1>
+    <h1 class="ml16"> - March 12th, 2023 -</h1>
 
-    <p> Forest Park </p>
-    <p> 4099 NW Thurman St Portland OR </p>
+    <h3 class="ml16"> Forest Park </h3>
+    <h3 class="ml16"> 4099 NW Thurman St Portland OR </h3>
 
 <div id="countdown" class="mb-5">
 	<section class="container">
@@ -37,11 +38,22 @@
 			
 		</div>
 	</section> 
-</div>
+</div> 
+
+    <div class="map">
+
+        <h3 style='color:white'>YOU HAVE NO IDEA HOW TO GET THERE ?</h3>
+        <button> CLICK HERE ! <i class="fa-regular fa-heart"></i> </button>
+
+    </div>
+
+
+
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="script.js"></script>	
 
 
@@ -117,8 +129,29 @@ jQuery(function($){
 });
 
 
+
+
+
+
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml16 .letter' ,
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 2000,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16' ,
+    opacity: 1,
+    duration: 3000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
 </script>
-<p>tetteet</p>
 
-
+</body>
 {% endblock %}
