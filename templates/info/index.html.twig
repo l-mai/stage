@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello InfoController!{% endblock %}
+
+{% block body %}
+  <div class="navbarGallery " style="background-color:;">
+<nav class="navbar">
+    <a href="/home" class="logo"> A & J's WEDDING </a>
+
+    <div class="nav-links">
+      <ul>
+        <li class="active"><a href="/home">HOME</a> </li> 
+        <li><a href="/story">OUR STORY</a> </li>
+        <li><a href="/gallery">OUR GALLERY</a> </li>
+        
+        <li><a href="/menu">MENU & ACTIVITIES</a></li>
+        <li><a href="#">RSVP & INFOS </a></li>
+      </ul>
+    </div> 
+
+    <i class="fa-solid fa-bars" alt="menu burger" id="menu-hamburger" style="color:white"></i>
+
+
+    </nav>
+
+    <header class="headerGallery">
+    <h2 class="h2Gallery d-flex justify-content-center"> Our RSVP & INFOS -  made with love </h2>
+    </header>
+
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{ controller_name }}! ✅</h1>
+    {{ form(Formulaire) }}
+   
+</div>
+{% endblock %}

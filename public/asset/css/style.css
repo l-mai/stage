@@ -24,6 +24,8 @@ header {
     width: 100%;
     box-sizing: border-box;
     font-family: 'Poppins' sans-serif;
+    position: absolute;
+    z-index: 2;
 } 
 
 .navbar a { 
@@ -218,23 +220,15 @@ section p{
    .story { 
     width:100%;
 	height:100%;
-	background: radial-gradient(circle at 37% 57%,#f2eee7, #efe8e6, rgba(235,229,230,1));
-	background-size: cover;
-	color:#000;
-    
+	background-color: white;
     
    }
 
-   .imgC { 
-    border-radius: 35px;
-   
-   } 
-
    #pp { 
-    margin: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
-    
+    margin: 0;
 
    }
 
@@ -242,11 +236,12 @@ section p{
 
     height: 350px;
     width: 290px;
-    margin: 30px;
+    margin:  30px 100px;
     border: 1px solid beige;
-    border-radius: 15px;
+    border-radius: 25% 10%;
     box-shadow: 12px 12px 2px 1px #e9dddd;
-    transition: transform .1s;
+    transition: .1s;
+   
    }
 
    #pp img:hover {
@@ -254,22 +249,16 @@ section p{
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.1);
    } 
-.name { 
-    display: flex;
-    align-items: center;
-    margin: 50px;
-    text-transform:uppercase;
-    
-}
+
 
 #pp { 
     
     background-color: #FAF7F4;
     display: flex;
     justify-content: center;
-    padding: 20px;
-    margin:  50px 0px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    padding:  20px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 2px 2px #A49393;
     
 }
 
@@ -279,41 +268,280 @@ section p{
 
 
 
-.ml5 {
+.text-wrapper .letters {
+   
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-top: 180px;
+    font-family:'Arial', sans-serif;
+    font-size: 40px;
+
+  }
+  
+
+
+  .headerStory { 
+    height: 250px;
+	background: linear-gradient( rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url("https://img.freepik.com/premium-photo/mock-up-composition-white-flowers-rustic-style_81863-382.jpg?w=1380") center center no-repeat fixed ;
+    background-size: cover;
     position: relative;
-    font-weight: 300;
-    font-size: 4.5em;
-    color: #402d2d;
+    z-index: 1;
+    /*https://img.freepik.com/free-photo/high-angle-engagement-rings-beside-flowers_23-2148480738.jpg?w=1380&t=st=1675863893~exp=1675864493~hmac=4de15f6cdc51e5c2393d8a4454503e654e96eb312c9f4585620a505f23e1c23f*/ 
   }
-  
-  .ml5 .text-wrapper {
-    position: relative;
-    display: inline-block;
-    padding-top: 0.1em;
-    padding-right: 0.05em;
-    padding-bottom: 0.15em;
-    line-height: 1em;
-  }
-  
-  .ml5 .ampersand {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: italic;
-    font-weight: 400;
-    width: 1em;
-    margin-right: -0.1em;
-    margin-left: 0.1em;
-  }
-  
-  .ml5 .letters {
-    display: inline-block;
-    opacity: 0;
+
+  .gallery {
+    display: flex;
+    width: 90%;
+    
     
   }
+  
+  .gallery img {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.6s;
+    
+  }
+  
+  .gallery img:hover {
+    flex: 1 1 600px;
+    opacity: 1;
+    border-radius: 10px;
+  }
 
+  .h2Story { 
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 55%;
+    color: white;
+    text-transform:uppercase;
+    font-family: 'Courier New', Courier, monospace;
+  } 
 
-
-
-
-
-
+  .cardC  { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    transition: .1s;
+    margin-top: 10px;
+    text-shadow: 0px 2px 2px #F6CBB7;
    
+    
+    
+}
+.card-body { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAF7F4; 
+} 
+
+.card:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+   }  
+   
+   
+   .article { 
+    height: 700px;
+    width: 50%;
+    background-image: url("https://img.freepik.com/premium-photo/watercolor-botanical-green-leaves-frame-illustration-isolated_202769-4332.jpg?w=996");
+    
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    position: relative;
+    z-index: 1;
+    left: 25%;
+   
+   }
+
+   .txtArt { 
+
+    height: 400px;
+    width: 500px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center; 
+    position: absolute;
+    z-index: 2;
+    bottom:12%;
+    left:27%
+   }
+
+   .headerGallery { 
+    height: 250px;
+	background: linear-gradient( rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)),url("https://img.freepik.com/premium-photo/mock-up-composition-white-flowers-rustic-style_81863-382.jpg?w=1380") center center no-repeat fixed ;
+    background-size: cover;
+    
+    position: relative;
+    z-index: 1;
+    /*https://img.freepik.com/free-photo/high-angle-engagement-rings-beside-flowers_23-2148480738.jpg?w=1380&t=st=1675863893~exp=1675864493~hmac=4de15f6cdc51e5c2393d8a4454503e654e96eb312c9f4585620a505f23e1c23f*/ 
+  }
+
+  .h2Gallery { 
+    position: absolute;
+    z-index: 3;
+    left: 35%;
+    top: 55%;
+    color: white;
+    text-transform:uppercase;
+    font-family: 'Courier New', Courier, monospace;;
+  } 
+
+  .arts { 
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    
+
+  }
+ .artImg { 
+    height: 400px;
+    width: 600px;
+   
+
+ }
+
+  .art1 , .art2 { 
+
+    display: flex;
+    flex-direction: row;
+    height: 430px;
+    width: 1000px;
+    border: 5px solid #D6AD60;
+    padding: 15px;
+    display: flex;
+   
+
+  }
+
+  .txt1 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    color:#67595E;
+  }
+
+  .txt2 { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    color:#67595E;
+    
+
+  }
+
+  .h3Story { 
+    font-family: 'Bad Script', sans-serif;
+    margin: 5px;;
+  }
+
+  .art1 { 
+    display: flex;
+    justify-content: center;
+    margin: 20px 350px;
+   
+
+  }
+
+  .art2 { 
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  label {
+ 
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+    color: black;
+   }
+   
+   input {
+    display: none;
+   }
+   
+   input:checked + label svg {
+    fill: hsl(0deg 100% 50%);
+    stroke: hsl(0deg 100% 50%);
+    animation: heartButton 1s;
+   }
+   
+   @keyframes heartButton {
+    0% {
+     transform: scale(1);
+    }
+   
+    25% {
+     transform: scale(1.3);
+    }
+   
+    50% {
+     transform: scale(1);
+    }
+   
+    75% {
+     transform: scale(1.3);
+    }
+   
+    100% {
+     transform: scale(1);
+    }
+   }
+   
+   input + label .action {
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    
+   }
+   
+   input + label .action span {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    transition: all .5s;
+   }
+   
+   input + label .action span.option-1 {
+    transform: translate(0px,0%);
+    opacity: 1;
+   }
+   
+   input:checked + label .action span.option-1 {
+    transform: translate(0px,-100%);
+    opacity: 0;
+   }
+   
+   input + label .action span.option-2 {
+    transform: translate(0px,100%);
+    opacity: 0;
+   }
+   
+   input:checked + label .action span.option-2 {
+    transform: translate(0px,0%);
+    opacity: 1;
+   }
+
