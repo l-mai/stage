@@ -5,16 +5,16 @@
 {% block body %}
 
  <nav class="navbar">
-    <a href="/home" class="logo"> A & J's WEDDING </a>
+    <a href="/home" class="lien logo"> A & J's WEDDING </a>
 
     <div class="nav-links">
       <ul>
-        <li class="active"><a href="/home">HOME</a> </li> 
-        <li><a href="/story">OUR STORY</a> </li>
-        <li><a href="/gallery">OUR GALLERY</a> </li>
+        <li class="lien active"><a href="/home">HOME</a> </li> 
+        <li><a class="lien" href="/story">OUR STORY</a> </li>
+        <li><a class="lien" href="/gallery">OUR GALLERY</a> </li>
         
-        <li><a href="/menu">MENU & ACTIVITIES</a></li>
-        <li><a href="#">RSVP & INFOS </a></li>
+        <li><a class="lien" href="/menu">MENU & ACTIVITIES</a></li>
+        <li><a class="lien" href="/info">RSVP & INFOS </a></li>
       </ul>
     </div> 
 
@@ -66,7 +66,8 @@
     <div class="map">
 
         <h3 style='color:white '>YOU HAVE NO IDEA HOW TO GET THERE ?</h3>
-        <button> CLICK HERE ! <i class="fa-regular fa-heart"></i> </button>
+        <button><a class="btnHome" href="{{ path('app_info') }}" >CLICK HERE ! <i class="fa-regular fa-heart"></i> </button>
+       
 
     </div>
 

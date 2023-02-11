@@ -52,35 +52,38 @@ header {
   
 }
 
-a:before, a:after { 
+.lien:before, .lien:after { 
     content:"";
     position: absolute;
     height: 3px;
     width: 0;
     background-color: #FAF7F4;
     transition: .5s;
+    
 } 
 
-a:after { 
+.lien:after { 
     left:0;
     bottom: -10px;
 }
 
-a::before { 
+.lien::before { 
     right: 0;
     top: -10px;
 }
 
-a:hover:after , a:hover::before { 
+.lien:hover:after , .lien:hover::before { 
     width: 100%;
+    
 } 
 
-a { 
+.lien { 
     position: relative;
     text-decoration: none;
     font-size: 18px;
     letter-spacing: .5px;
     padding: 0 20;
+    
 }
 
 .navbar i#menu-hamburger  { 
@@ -154,7 +157,7 @@ section p{
     padding-top: 30px;
     font-family: 'Bad Script', sans-serif;
    
-}
+} 
 
 .ml16 {
    
@@ -213,7 +216,8 @@ section p{
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
     
    }
 
@@ -263,7 +267,7 @@ section p{
 }
 
 .titreStory { 
-    font-family: 'Bad Script', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -274,7 +278,7 @@ section p{
     justify-self: center;
     align-items: center;
     margin-top: 180px;
-    font-family:'Arial', sans-serif;
+    font-family:'Bad Script', sans-serif;
     font-size: 40px;
 
   }
@@ -330,22 +334,25 @@ section p{
     transition: .1s;
     margin-top: 10px;
     text-shadow: 0px 2px 2px #F6CBB7;
-   
-    
-    
 }
 .card-body { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #FAF7F4; 
+    background-color:  #FAF7F4; 
+    border: 1px solid white;
+    padding: 30px;
+    font-family: 'Bad Script' sans-serif;
 } 
+
 
 .card:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
     transform: scale(1.1);
    }  
+
+   
    
    
    .article { 
@@ -544,4 +551,113 @@ section p{
     transform: translate(0px,0%);
     opacity: 1;
    }
+
+   .info { 
+    background-color: #FAF7F4;
+   }
+
+   .example-wrapper { 
+    margin: 1em auto; 
+    max-width: 800px; 
+    width: 95%; 
+    font: 18px/1.5 sans-serif; 
+    caret-color: brown;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+   
+   }
+    .example-wrapper code {
+     background: #F5F5F5; 
+     padding: 2px 6px; 
+     
+    }  
+
+    .form-label { 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      
+    }
+
+    .form  .mb-3 { 
+        background-color: #FAF7F4;
+        border: 1px solid #FAF7F4; ;
+    }
+
+     .mb-3 , #info_send { 
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(252, 250, 250);
+        border: 1px solid white;
+        color: rgb(144, 144, 144);
+        padding: 5px 40px;
+        
+    }
+
+
+  .carte { 
+    height: 500px;
+    width: 600px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+ 
+  }
+
+  .infoMap { 
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    
+  } 
+
+ .btnHome { 
+    color:white !important;
+   
+  }
+.btnHome:hover {  
+    color: white !important;
+  }
+
+.containerInfoSent { 
+  height: 400px;
+  width: 800px;
+  margin: 30px;
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  opacity: 0.8;
+  font-weight: 400;
+  font-family: 'Courier New', Courier, monospace;
+ 
+
+}
+
+.divPrincipal {  
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.25),rgba(0, 0, 0, 0.25)), url("https://images.pexels.com/photos/12627875/pexels-photo-12627875.jpeg") ;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  margin-top: 60px;
+  left: 25%;
+  
+  
+}
+
+
+
+ 
 

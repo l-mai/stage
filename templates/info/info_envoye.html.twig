@@ -1,10 +1,53 @@
 {% extends 'base.html.twig' %}
    {% block body %}
 
-<p>Hello, {{ data.name  }} !</p>
-<p> Your message " {{ data.message  }} " is send ! You'll get a mail confirmation for the reservation for " {{ data.numberGuests  }} " person on this adress : {{ data.email  }} </p>
-<p> Thank you & see you soon ! </p>
+     <div class="navbarGallery " style="background-color:;">
+<nav class="navbar">
+    <a href="/home" class="lien logo"> A & J's WEDDING </a>
+
+    <div class="nav-links">
+      <ul>
+        <li class="lien active"><a href="/home">HOME</a> </li> 
+        <li><a class="lien" href="/story">OUR STORY</a> </li>
+        <li><a class="lien" href="/gallery">OUR GALLERY</a> </li>
+        
+        <li><a class="lien" href="/menu">MENU & ACTIVITIES</a></li>
+        <li><a class="lien" href="/info">RSVP & INFOS </a></li>
+      </ul>
+    </div> 
+
+    <i class="fa-solid fa-bars" alt="menu burger" id="menu-hamburger" style="color:white"></i>
+
+
+    </nav>
+
+    <header class="headerGallery">
+    <h2 class="h2Gallery d-flex justify-content-center"> Our RSVP & INFOS -  made with love </h2>
+    </header>
+
+<body class="infoSent">
+
+<div class="divPrincipal">
+    <div class="containerInfoSent">
+      <p class="m-2 display-6">Hello, {{ data.name  }} !</p> <br>
+      <p> Your message is send ! You'll get a mail confirmation for the reservation for  {{ data.numberGuests  }} person on this adress : {{ data.email  }}.</p>
+      <p class="m-5"> Thank you & see you soon ! </p>
+
+
+      <input type="checkbox" checked="checked" id="favorite" name="favorite-checkbox" value="favorite-button">
+          <label for="favorite" class="container">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+
+       <div class="action">
+       </div>
+          </label>
+
+
+          
+   </div> <!--containerInfoSent-->
+ </div> 
+
+  </body>
   
-  
-   
-   {% endblock %}
+ 
+   {% endblock %}   

@@ -1,0 +1,26 @@
+.divMenu { 
+    height: 100%;
+    width: 100%;
+    background-color: #FAF7F4;
+}
+
+.App { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.MainC { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.Dessert { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}

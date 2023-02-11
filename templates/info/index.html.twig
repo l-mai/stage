@@ -5,16 +5,16 @@
 {% block body %}
   <div class="navbarGallery " style="background-color:;">
 <nav class="navbar">
-    <a href="/home" class="logo"> A & J's WEDDING </a>
+    <a href="/home" class="lien logo"> A & J's WEDDING </a>
 
     <div class="nav-links">
       <ul>
-        <li class="active"><a href="/home">HOME</a> </li> 
-        <li><a href="/story">OUR STORY</a> </li>
-        <li><a href="/gallery">OUR GALLERY</a> </li>
+        <li class="lien active"><a href="/home">HOME</a> </li> 
+        <li><a class="lien" href="/story">OUR STORY</a> </li>
+        <li><a class="lien" href="/gallery">OUR GALLERY</a> </li>
         
-        <li><a href="/menu">MENU & ACTIVITIES</a></li>
-        <li><a href="#">RSVP & INFOS </a></li>
+        <li><a class="lien" href="/menu">MENU & ACTIVITIES</a></li>
+        <li><a class="lien" href="/info">RSVP & INFOS </a></li>
       </ul>
     </div> 
 
@@ -27,14 +27,31 @@
     <h2 class="h2Gallery d-flex justify-content-center"> Our RSVP & INFOS -  made with love </h2>
     </header>
 
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+<body class="info">
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="example-wrapper mt-5">
+   <div class="form"=>
+   <div class="titreForm">
+   <h1 class="logo d-flex justify-content-center"> A & J's WEDDING </h1>
+   <p class="d-flex justify-content-center mb-5"> Please reserve before Feb 12th, 2013. Tell us if you're coming</p>
+   </div> <!-- titreForm-->
     {{ form(Formulaire) }}
+   </div> <!-- form-->
    
-</div>
+</div> <!-- ex wrap-->
+
+
+   <div class="infoMap">  
+   
+   <iframe class="carte" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8819.530582850375!2d-122.73548396224085!3d45.539269688172645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549509c7457436a9%3A0x19fa5edaeabb9d45!2s4099%20NW%20Thurman%20St%2C%20Portland%2C%20OR%2097210%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sfr!4v1675958280462!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </div> <!-- infoMap-->
+
+
+
+
+
+
+
+</body>
 {% endblock %}
