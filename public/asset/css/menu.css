@@ -1,3 +1,5 @@
+
+
 .divMenu { 
     height: 100%;
     width: 100%;
@@ -8,7 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 60px;
+    margin-bottom: 50px;
 }
 
 .MainC { 
@@ -16,6 +19,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .Dessert { 
@@ -24,3 +28,4 @@
     align-items: center;
     margin-top: 30px;
 }
+

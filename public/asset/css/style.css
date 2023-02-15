@@ -28,6 +28,42 @@ header {
     z-index: 2;
 } 
 
+
+@media screen and (max-width: 768px) { /* En dessous de 768px, menu burger apparaît*/
+  .nav-links {
+    display: none;
+  }
+
+  .open {
+    display: flex !important;
+  }
+
+  .menu-container {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    justify-content: flex-end;   
+  }
+  i#menu-hamburger {
+    display: block !important;
+    z-index: 3;
+  }
+}
+
+.open {
+  display: none; 
+}
+
+.menu-burger {
+  padding-top: 120px;
+  background-color: black;
+  height: 100vh;
+  width: 180px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
 .navbar a { 
     color: white;
 }
@@ -77,6 +113,10 @@ header {
     
 } 
 
+.menu-container {
+  display: none;
+}
+
 .lien { 
     position: relative;
     text-decoration: none;
@@ -86,24 +126,13 @@ header {
     
 }
 
-.navbar i#menu-hamburger  { 
+ i#menu-hamburger  { 
     display: none; ;
     position: absolute;
+    color: white;
     top: 50px;
     right: 50px;
-    width: 35px;
-
-}
-
-@media screen and (max-width: 900px) {
-
-    .navbar  i#menu-hamburger { 
-        display: block;
-    }
-    .nav-links { 
-        display: none;
-    }
-
+    font-size: 40px;
 }
 .home{
 	width:100%;
@@ -233,14 +262,26 @@ section p{
     display: flex;
     flex-direction: row;
     margin: 0;
-
+    background-color: #FAF7F4;
+    display: flex;
+    justify-content: space-between;
+    padding:  20px 0px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 0px 2px 2px #A49393;
    }
+
+  .mrs {
+    margin-left: 20px;
+  }
+  .mr {
+   margin-right: 20px;
+  }
+
 
    #pp img { 
 
     height: 350px;
     width: 290px;
-    margin:  30px 100px;
     border: 1px solid beige;
     border-radius: 25% 10%;
     box-shadow: 12px 12px 2px 1px #e9dddd;
@@ -255,17 +296,6 @@ section p{
    } 
 
 
-#pp { 
-    
-    background-color: #FAF7F4;
-    display: flex;
-    justify-content: center;
-    padding:  20px 0px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-shadow: 0px 2px 2px #A49393;
-    
-}
-
 .titreStory { 
     font-family: 'Courier New', Courier, monospace;
 }
@@ -277,7 +307,7 @@ section p{
     display: flex;
     justify-self: center;
     align-items: center;
-    margin-top: 180px;
+    height: 100%;
     font-family:'Bad Script', sans-serif;
     font-size: 40px;
 
@@ -613,6 +643,7 @@ section p{
     background-color: white;
     display: flex;
     justify-content: center;
+    padding-bottom: 40px;
     
   } 
 
@@ -653,8 +684,7 @@ section p{
   z-index: 2;
   margin-top: 60px;
   left: 25%;
-  
-  
+
 }
 
 

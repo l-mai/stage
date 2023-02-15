@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{% block title %}Welcome!{% endblock %}</title>
         <link rel="icon" href="https://media.discordapp.net/attachments/290242065277648897/1072586733805375621/Capture_decran_2023-02-07_a_19.36.32.png">
 
@@ -30,12 +31,29 @@
         {% endblock %} 
  </head> 
 <body>
-   
-
-
- 
-        {% block body %}{% endblock %}
-    </body>
+    <div class="menu-container" id='menu-container'>
+        <nav class="menu-burger">
+            <ul>
+                <li class="lien active"><a href="/home">HOME</a> </li> 
+                <li><a class="lien" href="/story">OUR STORY</a> </li>
+                <li><a class="lien" href="/gallery">OUR GALLERY</a> </li>
+                
+                <li><a class="lien" href="/menu">MENU </a></li>
+                <li><a class="lien" href="/info">RSVP & INFOS </a></li>
+      </ul>
+            </ul>
+        </nav>
+    </div>
+     {% block body %}{% endblock %}
+</body>
 
    
 </html>
+
+        <script>
+            const menuHamburger = document.getElementById('menu-hamburger');
+            menuHamburger.onclick = function() {
+                const menu = document.getElementById('menu-container');
+                menu.classList.toggle('open');    
+            }
+        </script>
