@@ -1,8 +1,5 @@
-
-
 .divMenu { 
-    height: 100%;
-    width: 100%;
+
     background-color: #FAF7F4;
 }
 
@@ -11,21 +8,24 @@
     justify-content: center;
     align-items: center;
     padding-top: 60px;
-    margin-bottom: 50px;
+  
+}
+
+#imgAPP { 
+  
+  
 }
 
 .MainC { 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
 }
 
 .Dessert { 
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+  
 }
 
